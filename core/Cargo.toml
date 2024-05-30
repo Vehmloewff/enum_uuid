@@ -1,0 +1,11 @@
+
+[package]
+name = "enum_uuid"
+edition = "2021"
+
+[lib]
+path = "mod.rs"
+
+[dependencies]
+uuid = { version = "1" }
+derive_enum_uuid = { path = "../derive" }

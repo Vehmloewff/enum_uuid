@@ -1,0 +1,13 @@
+[package]
+name = "derive_enum_uuid"
+edition = "2021"
+
+[lib]
+proc_macro = true
+path = "mod.rs"
+
+[dependencies]
+syn = { version = "2", features = ["full"] }
+quote = "1"
+proc-macro2 = "1"
+uuid = { version = "1", features = ["v4"] }
